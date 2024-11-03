@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     weightInput.addEventListener('input', (e) => {
         const weight = parseFloat(e.target.value);
         
-        if (weight > 75 && weight <= 200) {
+        if (weight > 70 && weight <= 200) {
             warningIcon.classList.add('spinning');
             warningMessage.classList.remove('hidden');
             warningSound.play().catch(error => {
